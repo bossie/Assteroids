@@ -44,7 +44,9 @@ void fatal(const std::string & reason = "unknown error") {
 }
 
 void precacheImages(const Properties & settings) {
-    foreach(const std::string & name, settings.names()) {
+    std::set<std::string> names = settings.names();
+
+    foreach(const std::string & name, names) {
         if (ends_with(name, ".image")) {
             SDL::loadImage(settings[name], name != Constants::BACKGROUND_IMAGE);
         }

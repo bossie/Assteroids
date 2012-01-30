@@ -28,7 +28,8 @@ Window::~Window() {
 void Window::draw(double interpolation) {
     drawBackground(m_screen);
 
-    foreach(shared_ptr<Entity> e, m_model.entities()) {
+    std::vector<shared_ptr<Entity> > entities = m_model.entities();
+    foreach(shared_ptr<Entity> e, entities) {
         lookup(e)->draw(m_screen, interpolation);
     }
 
