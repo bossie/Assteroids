@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="src/collision/Circle.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="538" topLine="0" />
+	</File>
+	<File name="src/collision/Circle.h" open="0" top="0" tabpos="0">
+		<Cursor position="214" topLine="0" />
+	</File>
+	<File name="src/collision/CollisionRegistry.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="964" topLine="28" />
+	</File>
+	<File name="src/collision/CollisionRegistry.h" open="0" top="0" tabpos="3">
+		<Cursor position="196" topLine="0" />
+	</File>
+	<File name="src/collision/TypeInfo.cpp" open="1" top="0" tabpos="10">
+		<Cursor position="64" topLine="0" />
+	</File>
+	<File name="src/collision/TypeInfo.h" open="0" top="0" tabpos="0">
+		<Cursor position="290" topLine="0" />
+	</File>
+	<File name="src/config/FileProperties.cpp" open="1" top="0" tabpos="13">
+		<Cursor position="0" topLine="61" />
+	</File>
+	<File name="src/config/Properties.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/entity/Asteroid.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="1305" topLine="34" />
+	</File>
+	<File name="src/entity/Asteroid.h" open="0" top="0" tabpos="7">
+		<Cursor position="526" topLine="13" />
+	</File>
+	<File name="src/entity/Bullet.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="345" topLine="0" />
+	</File>
+	<File name="src/entity/Bullet.h" open="0" top="0" tabpos="2">
+		<Cursor position="516" topLine="0" />
+	</File>
+	<File name="src/entity/Direction.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="141" topLine="0" />
+	</File>
+	<File name="src/entity/Direction.h" open="0" top="0" tabpos="7">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/entity/Entity.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="1473" topLine="52" />
+	</File>
+	<File name="src/entity/Entity.h" open="0" top="0" tabpos="5">
+		<Cursor position="561" topLine="35" />
+	</File>
+	<File name="src/entity/EntityManager.cpp" open="1" top="0" tabpos="14">
+		<Cursor position="1488" topLine="60" />
+	</File>
+	<File name="src/entity/EntityManager.h" open="0" top="0" tabpos="4">
+		<Cursor position="198" topLine="0" />
+	</File>
+	<File name="src/entity/Spaceship.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="1370" topLine="0" />
+	</File>
+	<File name="src/entity/Spaceship.h" open="0" top="0" tabpos="0">
+		<Cursor position="783" topLine="10" />
+	</File>
+	<File name="src/event/GameLoop.cpp" open="1" top="0" tabpos="15">
+		<Cursor position="1704" topLine="60" />
+	</File>
+	<File name="src/event/GameLoop.h" open="0" top="0" tabpos="0">
+		<Cursor position="441" topLine="6" />
+	</File>
+	<File name="src/event/IngameKeyboardHandler.cpp" open="1" top="0" tabpos="16">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/main.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="1170" topLine="31" />
+	</File>
+	<File name="src/properties/Constants.h" open="0" top="0" tabpos="1">
+		<Cursor position="175" topLine="0" />
+	</File>
+	<File name="src/properties/FileProperties.h" open="0" top="0" tabpos="0">
+		<Cursor position="156" topLine="0" />
+	</File>
+	<File name="src/properties/Properties.h" open="0" top="0" tabpos="0">
+		<Cursor position="257" topLine="0" />
+	</File>
+	<File name="src/sdl/AsteroidWidget.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="334" topLine="5" />
+	</File>
+	<File name="src/sdl/AsteroidWidget.h" open="1" top="0" tabpos="2">
+		<Cursor position="240" topLine="3" />
+	</File>
+	<File name="src/sdl/BulletWidget.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="379" topLine="5" />
+	</File>
+	<File name="src/sdl/BulletWidget.h" open="1" top="0" tabpos="3">
+		<Cursor position="458" topLine="1" />
+	</File>
+	<File name="src/sdl/FpsCounter.cpp" open="1" top="1" tabpos="17">
+		<Cursor position="1154" topLine="21" />
+	</File>
+	<File name="src/sdl/FpsCounter.h" open="0" top="0" tabpos="2">
+		<Cursor position="463" topLine="3" />
+	</File>
+	<File name="src/sdl/FpsLabel.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="437" topLine="12" />
+	</File>
+	<File name="src/sdl/FpsLabel.h" open="0" top="0" tabpos="2">
+		<Cursor position="467" topLine="6" />
+	</File>
+	<File name="src/sdl/SDL.cpp" open="1" top="0" tabpos="18">
+		<Cursor position="4088" topLine="77" />
+	</File>
+	<File name="src/sdl/SDL.h" open="0" top="0" tabpos="1">
+		<Cursor position="264" topLine="3" />
+	</File>
+	<File name="src/sdl/SpaceshipWidget.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="395" topLine="8" />
+	</File>
+	<File name="src/sdl/SpaceshipWidget.h" open="1" top="0" tabpos="1">
+		<Cursor position="166" topLine="0" />
+	</File>
+	<File name="src/sdl/Widget.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="282" topLine="0" />
+	</File>
+	<File name="src/sdl/Widget.h" open="1" top="0" tabpos="8">
+		<Cursor position="227" topLine="0" />
+	</File>
+	<File name="src/sdl/WidgetFactory.cpp" open="0" top="0" tabpos="3">
+		<Cursor position="463" topLine="17" />
+	</File>
+	<File name="src/sdl/WidgetFactory.h" open="0" top="0" tabpos="4">
+		<Cursor position="119" topLine="0" />
+	</File>
+	<File name="src/sdl/Window.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="405" topLine="5" />
+	</File>
+	<File name="src/sdl/Window.h" open="0" top="0" tabpos="5">
+		<Cursor position="625" topLine="16" />
+	</File>
+	<File name="src/util/Cache.h" open="0" top="0" tabpos="8">
+		<Cursor position="0" topLine="0" />
+	</File>
+	<File name="src/util/Utilities.cpp" open="0" top="0" tabpos="7">
+		<Cursor position="42" topLine="0" />
+	</File>
+	<File name="src/util/Utilities.h" open="0" top="0" tabpos="6">
+		<Cursor position="101" topLine="0" />
+	</File>
+	<File name="src/util/erase_if.h" open="0" top="0" tabpos="3">
+		<Cursor position="120" topLine="0" />
+	</File>
+	<File name="src/vector/Vector2D.cpp" open="0" top="0" tabpos="10">
+		<Cursor position="1576" topLine="65" />
+	</File>
+	<File name="src/vector/Vector2D.h" open="0" top="0" tabpos="9">
+		<Cursor position="18" topLine="0" />
+	</File>
+	<File name="src/world/World.cpp" open="1" top="0" tabpos="19">
+		<Cursor position="80" topLine="0" />
+	</File>
+	<File name="src/world/World.h" open="0" top="0" tabpos="9">
+		<Cursor position="479" topLine="21" />
+	</File>
+</CodeBlocks_layout_file>

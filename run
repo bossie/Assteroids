@@ -1,0 +1,20 @@
+#!/bin/bash
+
+CURRENT_DIR=`pwd`
+DEBUG_DIR=bin/Debug
+RELEASE_DIR=bin/Release
+EXECUTABLE=Assteroids
+
+if [ "$1" == "release" ]; then
+	cd $RELEASE_DIR
+else
+	cd $DEBUG_DIR
+fi
+
+export LD_LIBRARY_PATH=../../../libs/log4cxx/lib
+./$EXECUTABLE
+
+echo $DEBUG_DIR/$EXECUTABLE returned with error code $?
+
+cd $CURRENT_DIR
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Assteroids" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Assteroids" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="realistic.properties" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Assteroids" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Werror" />
+			<Add directory="../libs/boost" />
+			<Add directory="../libs/log4cxx/include" />
+		</Compiler>
+		<Linker>
+			<Add library="SDL" />
+			<Add library="log4cxx" />
+			<Add library="SDL_image" />
+			<Add library="SDL_gfx" />
+			<Add library="SDL_ttf" />
+			<Add directory="../libs/log4cxx/lib" />
+		</Linker>
+		<Unit filename="src/collision/Circle.cpp" />
+		<Unit filename="src/collision/Circle.h" />
+		<Unit filename="src/collision/CollisionRegistry.cpp" />
+		<Unit filename="src/collision/CollisionRegistry.h" />
+		<Unit filename="src/collision/TypeInfo.cpp" />
+		<Unit filename="src/collision/TypeInfo.h" />
+		<Unit filename="src/config/Constants.cpp" />
+		<Unit filename="src/config/Constants.h" />
+		<Unit filename="src/config/FileProperties.cpp" />
+		<Unit filename="src/config/FileProperties.h" />
+		<Unit filename="src/config/Properties.cpp" />
+		<Unit filename="src/config/Properties.h" />
+		<Unit filename="src/config/PropertiesException.cpp" />
+		<Unit filename="src/config/PropertiesException.h" />
+		<Unit filename="src/entity/Asteroid.cpp" />
+		<Unit filename="src/entity/Asteroid.h" />
+		<Unit filename="src/entity/Bullet.cpp" />
+		<Unit filename="src/entity/Bullet.h" />
+		<Unit filename="src/entity/Direction.cpp" />
+		<Unit filename="src/entity/Direction.h" />
+		<Unit filename="src/entity/Entity.cpp" />
+		<Unit filename="src/entity/Entity.h" />
+		<Unit filename="src/entity/EntityManager.cpp" />
+		<Unit filename="src/entity/EntityManager.h" />
+		<Unit filename="src/entity/Spaceship.cpp" />
+		<Unit filename="src/entity/Spaceship.h" />
+		<Unit filename="src/event/GameLoop.cpp" />
+		<Unit filename="src/event/GameLoop.h" />
+		<Unit filename="src/event/IngameKeyboardHandler.cpp" />
+		<Unit filename="src/event/IngameKeyboardHandler.h" />
+		<Unit filename="src/event/KeyboardHandler.cpp" />
+		<Unit filename="src/event/KeyboardHandler.h" />
+		<Unit filename="src/exception/Exception.cpp" />
+		<Unit filename="src/exception/Exception.h" />
+		<Unit filename="src/exception/IllegalStateException.cpp" />
+		<Unit filename="src/exception/IllegalStateException.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/properties/Constants.h" />
+		<Unit filename="src/properties/FileProperties.h" />
+		<Unit filename="src/properties/Properties.h" />
+		<Unit filename="src/properties/PropertiesException.h" />
+		<Unit filename="src/sdl/AsteroidWidget.cpp" />
+		<Unit filename="src/sdl/AsteroidWidget.h" />
+		<Unit filename="src/sdl/BulletWidget.cpp" />
+		<Unit filename="src/sdl/BulletWidget.h" />
+		<Unit filename="src/sdl/FpsCounter.cpp" />
+		<Unit filename="src/sdl/FpsCounter.h" />
+		<Unit filename="src/sdl/FpsLabel.cpp" />
+		<Unit filename="src/sdl/FpsLabel.h" />
+		<Unit filename="src/sdl/SDL.cpp" />
+		<Unit filename="src/sdl/SDL.h" />
+		<Unit filename="src/sdl/SDLException.cpp" />
+		<Unit filename="src/sdl/SDLException.h" />
+		<Unit filename="src/sdl/SpaceshipWidget.cpp" />
+		<Unit filename="src/sdl/SpaceshipWidget.h" />
+		<Unit filename="src/sdl/Widget.cpp" />
+		<Unit filename="src/sdl/Widget.h" />
+		<Unit filename="src/sdl/WidgetFactory.cpp" />
+		<Unit filename="src/sdl/WidgetFactory.h" />
+		<Unit filename="src/sdl/Window.cpp" />
+		<Unit filename="src/sdl/Window.h" />
+		<Unit filename="src/util/Cache.h" />
+		<Unit filename="src/util/Utilities.cpp" />
+		<Unit filename="src/util/Utilities.h" />
+		<Unit filename="src/util/erase_if.h" />
+		<Unit filename="src/vector/Vector2D.cpp" />
+		<Unit filename="src/vector/Vector2D.h" />
+		<Unit filename="src/world/World.cpp" />
+		<Unit filename="src/world/World.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
