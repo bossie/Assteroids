@@ -5,6 +5,7 @@
 #include "../collision/Circle.h"
 
 #include <string>
+#include <sigc++/sigc++.h>
 
 namespace world { class World; } // can't include "../world/World.h" because of cross-referencing, I guess
 
@@ -16,6 +17,8 @@ class Entity {
 
     static unsigned int m_count;
     const unsigned int m_index; // serves as both a key into a map and a z-index
+
+    sigc::signal<void> m_signalDestroyed;
 
 protected:
     collision::Circle m_shape;
@@ -53,6 +56,8 @@ public:
     virtual const std::string id() const;
     virtual unsigned int index() const;
     virtual bool target() const;
+
+    virtual sigc::signal<void> signalDestroyed() const;
 };
 
 } // namespace entity

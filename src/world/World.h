@@ -37,7 +37,8 @@ public:
     virtual void shoot();
 
     virtual void spawn(boost::shared_ptr<entity::Entity> e); // to spawn new entities
-    virtual void destroy(const entity::Entity & e);
+    virtual void onPlayerDestroyed();
+    virtual void onTargetDestroyed();
 
 private:
     virtual void spawnAsteroid();

@@ -9,6 +9,7 @@ using std::string;
 using vector::Vector2D;
 using collision::Circle;
 using world::World;
+using sigc::signal;
 
 unsigned int Entity::m_count = 0;
 
@@ -32,7 +33,7 @@ void Entity::update() {
 
 void Entity::destroy() {
     m_destroyed = true;
-    m_world.destroy(*this);
+    m_signalDestroyed.emit();
 }
 
 bool Entity::destroyed() const {
@@ -77,6 +78,10 @@ unsigned int Entity::index() const {
 
 bool Entity::target() const {
     return false;
+}
+
+signal<void> Entity::signalDestroyed() const {
+    return m_signalDestroyed;
 }
 
 } // namespace entity

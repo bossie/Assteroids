@@ -16,6 +16,7 @@ using collision::Circle;
 using util::Utilities;
 
 using boost::shared_ptr;
+using sigc::mem_fun;
 
 namespace world {
 
@@ -26,10 +27,12 @@ World::World():
     m_player(new Spaceship("player", *this, Circle(Vector2D::carth(-300, 0), 25))),
     m_targetCount(0) {
 
+    m_player->signalDestroyed().connect(mem_fun(*this, &World::onPlayerDestroyed));
     spawn(boost::dynamic_pointer_cast<Entity>(m_player));
 
-    for (int i = 0; i < 3; ++i)
+    for (int i = 0; i < 3; ++i) {
         spawnAsteroid();
+    }
 }
 
 World::~World() {}
@@ -77,21 +80,28 @@ void World::spawnAsteroid() {
     double omega = random(-0.25, 0.25);
 
     shared_ptr<Entity> asteroid(new Asteroid("asteroid", Asteroid::Type::NORMAL, *this, Circle(pos, 25), dir, vel, omega));
-
     spawn(asteroid);
 }
 
 void World::spawn(shared_ptr<Entity> e) {
     m_entityManager.add(e);
 
-    if (e->target())
+    if (e->target()) {
         ++m_targetCount;
+        e->signalDestroyed().connect(mem_fun(*this, &World::onTargetDestroyed));
+    }
 }
 
-void World::destroy(const Entity & e) {
-    if (&e == m_player.get()) {
-        LOG4CXX_INFO(m_logger, "GAME OVER");
-    } else if (e.target() && --m_targetCount == 0) { // short-circuit evaluation
+void World::onPlayerDestroyed() {
+    LOG4CXX_INFO(m_logger, "GAME OVER");
+}
+
+void World::onTargetDestroyed() {
+    --m_targetCount;
+
+    LOG4CXX_DEBUG(m_logger, "one down, " << m_targetCount << " to go");
+
+    if (m_targetCount == 0) {
         LOG4CXX_INFO(m_logger, "WINNER!");
     }
 }
