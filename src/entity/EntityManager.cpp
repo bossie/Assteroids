@@ -99,8 +99,9 @@ void EntityManager::resolveCollisions() {
             for (EntityList::size_type j = i + 1; j < m_entities.size(); ++j) {
                 Entity & b = *m_entities[j];
 
-                // ditto
-                if (b.destroyed())
+                // if spaceship a collides with asteroids b and c at the same time, collision(a, b) will destroy a,
+                // but collision(a, c) will still be considered unless we check for a's destruction again
+                if (a.destroyed() || b.destroyed())
                     continue;
 
                 if (a.collidesWith(b)) { // hit!
